@@ -116,9 +116,9 @@ public class Product   //использование композиции кла�
 
     public Product(string name, decimal price)
     {
-        Name = name;
-        Price = new Price(price);
         if (price < minprice) price = minprice;
+        Name = name;
+        Price = new Price(price); 
     }
 }
 
